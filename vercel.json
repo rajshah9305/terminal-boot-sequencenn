@@ -1,24 +1,7 @@
 {
-  "version": 2,
   "buildCommand": "pnpm build",
   "devCommand": "pnpm dev",
   "installCommand": "pnpm install",
   "framework": "vite",
-  "public": false,
-  "env": {
-    "NODE_ENV": "production"
-  },
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/.*",
-      "dest": "dist/index.html",
-      "status": 200
-    }
-  ]
+  "outputDirectory": "dist/public"
 }
